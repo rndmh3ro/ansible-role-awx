@@ -31,6 +31,7 @@ Available variables are listed below, along with default values (see `defaults/m
     pg_password: awxpass
     default_admin_user: admin
     default_admin_password: password
+    awx_host_port: 3001
 
 Variables to control what version of AWX is checked out and installed.
 
@@ -51,12 +52,12 @@ None.
 
     - hosts: awx-centos
       become: yes
-    
+
       vars:
         nodejs_version: "6.x"
         pip_install_packages:
           - name: docker-py
-    
+
       roles:
         - geerlingguy.repo-epel
         - geerlingguy.git
