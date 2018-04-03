@@ -1,6 +1,6 @@
 # Ansible Role: AWX (open source Ansible Tower)
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-awx.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-awx)
+[![Build Status](https://travis-ci.org/rndmh3ro/ansible-role-awx.svg?branch=master)](https://travis-ci.org/rndmh3ro/ansible-role-awx)
 
 Installs and configures [AWX](https://github.com/ansible/awx), the open source version of [Ansible Tower](https://www.ansible.com/tower).
 
@@ -62,7 +62,7 @@ None.
         - geerlingguy.docker
         - geerlingguy.pip
         - geerlingguy.nodejs
-        - geerlingguy.awx
+        - rndmh3ro.awx
 
 After AWX is installed, you can log in with the default username `admin` and password `password`.
 
