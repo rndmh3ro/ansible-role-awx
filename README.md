@@ -32,6 +32,7 @@ Available variables are listed below, along with default values (see `defaults/m
     default_admin_user: admin
     default_admin_password: password
     awx_host_port: 3001
+    postgres_data_dir: /opt/awx/pgdocker
 
 Variables to control what version of AWX is checked out and installed.
 
@@ -39,10 +40,6 @@ Variables to control what version of AWX is checked out and installed.
 
 By default, this role will run the installation playbook included with AWX (which builds a set of containers and runs them). You can disable the playbook run by setting this variable to `no`.
 
-Variables to modify the installation.
-
-    awx_secret_key: tempsecretkey
-    postgres_data_dir: /opt/awx/pgdocker
 
 ## Dependencies
 
@@ -74,5 +71,7 @@ After AWX is installed, you can log in with the default username `admin` and pas
 MIT / BSD
 
 ## Author Information
+
+* Author:: Sebastian Gumprich <github at gumpri dot ch>
 
 This role was created in 2017 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
